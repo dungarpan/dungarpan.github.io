@@ -1,0 +1,141 @@
+html {
+	font-family: "Allerta Stencil", Sans-serif;
+}
+
+
+@media (min-width: 200px) {
+	html {
+		font-size: 10px;
+	}
+	.headerpic{
+		height: 35px;
+	}
+	.icons-social i {
+	padding: 1vh;
+		}
+	.tag{
+		font-size:8px;
+	}
+}
+
+@media (min-width: 576px) {
+	html {
+		font-size: 12px;
+	}
+	.headerpic{
+		height: 35px;
+	}
+	.icons-social i {
+	padding: 2vh;
+		}
+	.tag{
+		font-size:10px;
+	}
+}
+
+@media (min-width: 768px) {
+	html {
+		font-size: 14px;
+	}
+	.headerpic{
+		height: 40px;
+	}
+	.icons-social i {
+	padding: 4vh;
+	}
+	.tag{
+		font-size:11px;
+	}
+}
+
+@media (min-width: 992px) {
+	html {
+		font-size: 16px;
+	}
+	.headerpic{
+		height: 45px;
+	}
+	.icons-social i {
+	padding: 4vh;
+	}
+	.tag{
+		font-size:13px;
+	}
+}
+
+@media (min-width: 1200px) {
+	html {
+		font-size: 20px;
+	}
+	.headerpic{
+		height:50px;
+	}
+	.icons-social i {
+	padding: 4vh;
+	}
+	.tag{
+		font-size:15px;
+	}
+}
+
+.icons-social  {
+	font-size: 1.5em;
+	position: absolute;
+	bottom:2vh;
+	left: 50%;
+	transform: translateX(-50%);
+	justify-content:center;
+}
+
+.header{
+	padding: 10px 0px;
+}
+
+/* Custom Styles */
+
+main {
+	position: relative;
+	display: flex;
+	padding: 0px 30px;
+	flex-direction: column;
+	min-height: 100vh;
+	text-align: center;
+}
+
+.headerpic > a{
+		font-size:2em;
+}
+
+main > .intro {
+	margin-top: 10vh;
+	font-family: "Allerta Stencil", Sans-serif;
+	font-size: 3.75em;
+	font-weight: 200;
+}
+
+main > .tagline {
+	font-family: "Allerta Stencil", Sans-serif;
+	font-size: 1.5rem;
+	margin-top: 2vh ;
+	margin-bottom: 5vh;
+	font-weight: 100;
+}
+
+main > .clock{
+	font-family: "Allerta Stencil", Sans-serif;
+	font-size:2rem;
+	margin: 2rem 0;
+}
+
+
+
+.devto {
+	margin-bottom: -0.20rem;
+}
+
+.devto svg {
+	margin-bottom: -0.20rem;
+	margin-left: 0.675rem;;
+	width: 2.65rem;
+	height: 2.65rem;
+}
