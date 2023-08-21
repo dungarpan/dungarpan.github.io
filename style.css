@@ -128,3 +128,17 @@ body {
     margin-left: 5%;
     margin-right: 5%;
 }
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a i {
+    color: black;
+}
+
+.social-icons a:hover i {
+    color: black;
+    transform: scale(1.1);
+}
