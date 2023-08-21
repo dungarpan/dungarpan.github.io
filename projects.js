@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let currentComponent = 0;
   let touchStartY = 0;
   let touchEndY = 0;
+  let isScrolling = false;
 
   function scrollToComponent(index) {
     window.scrollTo({
@@ -21,15 +22,21 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function handleScroll(event) {
-    const direction = event.deltaY > 0 ? 1 : -1;
-    currentComponent += direction;
-    if (currentComponent < 0) {
-      currentComponent = 0;
-    } else if (currentComponent >= componentCount) {
-      currentComponent = componentCount - 1;
+    if (!isScrolling) {
+      isScrolling = true;
+      const direction = event.deltaY > 0 ? 1 : -1;
+      currentComponent += direction;
+      if (currentComponent < 0) {
+        currentComponent = 0;
+      } else if (currentComponent >= componentCount) {
+        currentComponent = componentCount - 1;
+      }
+      scrollToComponent(currentComponent);
+      updateActiveDot();
+      setTimeout(() => {
+        isScrolling = false;
+      }, 1000); // Adjust the debounce duration as needed
     }
-    scrollToComponent(currentComponent);
-    updateActiveDot();
   }
 
   function handleTouchStart(event) {
