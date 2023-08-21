@@ -74,6 +74,7 @@
     }
     
     .project-id {
+        text-align: center;
         flex-direction: column;
         padding-top:10vh;
         padding-bottom: 5vh;
@@ -82,13 +83,21 @@
       }
     
     .project-id-image {
-        width: 50%;
-        padding-bottom: 5vh;
+        width: 35%;
+        padding-bottom: 3vh;
     }
     .project-id-summary {
-        font-size: 3.5vw;
+        text-align: left;
+        width: 90%;
+        font-size: 3vw;
         line-height: 1.25;
+        margin-left:1vw;
+        margin-right:1vw;
 
+    }
+    .project-id-summary-head{
+        font-size: 4vw;
+        font-weight: 550;
     }
     
 }
