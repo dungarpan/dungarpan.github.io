@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Arpan Chatterjee</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+<body>
+    
+    <div class="outermost">
+        <!--
+        <nav class="navbar">
+            <span class="navbar-text">Arpan Chatterjee</span>
+        </nav>
+        -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+              <a class="navbar-brand" href="index.html">Arpan Chatterjee</a>
+              <!-- Hamburger Icon -->
+              <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i> <!-- Font Awesome bars icon -->
+              </button>
+              <!-- Navbar Links -->
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="projects.html">Projects</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                  </li>
+                </ul>
+              </div>
+          </nav>
+
+
+        <section class="projects">
+                      <!--
+            <p class="projects-about"> Here is a list of my recent <b>projects</b>. </p>
+            -->
+            <div class="project-id" id="component1">
+                <div class="project-id-image">
+                    <img src="ny1.jfif" alt="Image">
+                </div>
+                <div class="project-id-summary">
+                    <div class="project-id-summary-head">Wikipedia Question Answering Model</div><br>
+                    <p>Central to this project is a sophisticated QA system, utilizing Microsoft's MPNET retriever model on an extensive dataset of 6 million Wikipedia articles. This fusion of cutting-edge technology with rich content enables me to provide insightful responses tailored to your queries.
+
+                        Efficiency is key, and that's why I've seamlessly integrated the Pinecone index. This feature optimizes vector embedding storage and retrieval, ensuring swift access to information through intuitive cosine similarity queries.
+                        
+                        To enhance the accuracy of responses, I've employed the ELI5 BART model. This Sequence-To-Sequence marvel crafts precise answers by drawing inspiration from the most relevant responses.
+                    </p>
+                    <a href = "https://github.com/dungarpan/Wiki-QA">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-id" id="component2">
+                <div class="project-id-image">
+                    <img src="ny2.jfif" alt="Image">
+                </div>
+                <div class="project-id-summary">
+                    <div class="project-id-summary-head">Patentability Score</div><br>
+                    <p>In this project, I embarked on an exploration by conducting an Executed Exploratory Data Analysis on an expansive Harvard USPTO patent dataset, encompassing over 4,500,000 patents. This undertaking allowed me to gain invaluable insights into the intricacies of patent data.
+
+                        Taking my analysis a step further, I fine-tuned the Google BERT transformer using this dataset. Leveraging this advanced model, I delved into the realm of predictive analytics by assessing patentability scores through  analysis of patent abstracts. This work can be used to check the viability of a patent.
+                    </p>
+                    <a href = "https://github.com/dungarpan/AI-Project-FineTuning-Language-Models">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-id" id="component3">
+                <div class="project-id-image">
+                    <img src="penang.jpg" alt="Image">
+                </div>
+                <div class="project-id-summary">
+                    <div class="project-id-summary-head">Autoregressive Text Generation</div><br>
+                    <p>I crafted an advanced text generation system using over 70,000 e-books sourced from Project Gutenberg, totaling a remarkable 100GB of data. My approach involved the strategic implementation of a 3-gram model alongside a frequency dictionary, constructed using PySpark.
+
+                        To enhance data organization, I designed a MongoDB database to intricately store e-book metadata. Furthermore, I elevated user engagement by developing a Streamlit-powered User Interface. This intuitive platform empowers users to effortlessly select authors and their works, ultimately generating contextually rich paragraphs.
+                    </p>
+                    <a href = "https://github.com/dungarpan/Autoregressive-Text-Generation">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-id" id="component4">
+                <div class="project-id-image">
+                    <img src="penang.jpg" alt="Image">
+                </div>
+                <div class="project-id-summary">
+                    <div class="project-id-summary-head">Improved Node Localization In Wireless Sensor Networks</div><br>
+                    <p>A sensor node localization technique, developed using the power of neural networks. The model has been methodically trained across a spectrum of scenarios, each involving intricate variations in the numbers and positions of anchor and sensor nodes. The result is a technique that not only demonstrates precision but also adapts seamlessly to a range of real-world situations.
+
+                        A remarkable achievement within this project is the attainment of an exceptional accuracy rate of 99.142%. The significance of this accomplishment is further underscored by the publication of this work.
+                    </p>
+                    <a href = "https://books.google.com/books?id=aaCSEAAAQBAJ&pg=PA69&lpg=PA69&dq=improved+tdoa+based+node+localization+in+wsn:+an+ann+approach+arpan+chatterjee&source=bl&ots=uY1uXSWFFB&sig=ACfU3U3IT8ivF55LlpOuNEx6IGa2cMmcmQ&hl=en&sa=X&ved=2ahUKEwis27DEw-yAAxXsGFkFHW8WDLgQ6AF6BAgIEAM#v=onepage&q=improved%20tdoa%20based%20node%20localization%20in%20wsn%3A%20an%20ann%20approach%20arpan%20chatterjee&f=false">Read the paper</a>
+                </div>
+            </div>
+
+            <div class="project-id" id="component5">
+                <div class="project-id-image">
+                    <img src="penang.jpg" alt="Image">
+                </div>
+                <div class="project-id-summary">
+                    <div class="project-id-summary-head">This is Project 3</div><br>
+                    <p>Your text goes here.  Your text goes here. Your text goes here. Your text goes here. Your text goes here.</p>
+                </div>
+            </div>
+
+            <div class="project-id" id="component6">
+                <div class="project-id-image">
+                    <img src="penang.jpg" alt="Image">
+                </div>
+                <div class="project-id-summary">
+                    <div class="project-id-summary-head">This is Project 3</div><br>
+                    <p>Your text goes here.  Your text goes here. Your text goes here. Your text goes here. Your text goes here.</p>
+                </div>
+            </div>
+     
+        </section>
+
+                            <!-- Fixed Navigation Dots -->
+        <div class="dots-container">
+            <div class="dot" data-target="component1"></div>
+            <div class="dot" data-target="component2"></div>
+            <div class="dot" data-target="component3"></div>
+            <div class="dot" data-target="component4"></div>
+            <div class="dot" data-target="component5"></div>
+            <div class="dot" data-target="component6"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script src="assets/main.js"></script>
+    <script src="script.js"></script>
+    <script src="projects.js"></script>
+
+
+</body>
+</html>

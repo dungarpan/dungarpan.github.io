@@ -1,0 +1,130 @@
+*
+{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+.outermost{
+	min-height: 100vh;
+	font-family: Courier, "Courier New", monospace, Courier, Icons;
+    background-color: white;
+    color: black;
+	max-width: 100%;
+    overflow-x: hidden;
+}
+/*
+.navbar {
+    position: fixed;
+    width:100%;
+    background-color: white;
+    padding-left: 0px;
+    padding-right: 0px;
+    z-index:5;
+}   /*old navbar
+*/
+
+.navbar {
+    position: fixed;
+    width: 90%;
+    background-color: white !important; /* Set the background to white */
+    color: black !important;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0.5vh 0;
+    z-index: 100;
+  }
+
+.navbar-brand{
+    font-size: 3.5vw !important;
+}
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: black !important; /* Set the text color to black */
+}
+
+/* Selected Nav Link */
+.navbar-nav .nav-item .nav-link:focus,
+.navbar-nav .nav-item .nav-link:hover { 
+  text-decoration: underline;
+}
+
+.navbar-nav .nav-item.active .nav-link {
+
+    font-weight: bold; /* Optionally, add any other styling you want */
+    /* Add other styles here as needed */
+  }
+
+
+  /* Optional: Increase font size and add padding */
+.navbar-nav .nav-link {
+    font-size: 1.5vw;
+}
+
+.nav-link{
+    margin-left: 2vw;
+}
+
+/* Hamburger Icon Color */
+.navbar-toggler {
+    color:black !important;
+}
+
+
+
+
+
+
+
+.main
+{
+	position: relative;
+	color: black;
+    height: 100%;
+    background-color:white;
+	padding-top:30vh;
+	text-align: left;
+    font-size:2vw;
+    line-height: 1.5;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.navbar-text {
+    color: black;
+    font-size: 3.5vw;
+}
+
+.about{
+    padding-bottom: 10vh;
+}
+.fa-2x{
+    padding-right: 4vw;
+}
+@media (max-width: 900px) {
+    .navbar-brand{
+        font-size: 6vw !important;
+    }
+    .navbar-nav .nav-link {
+        font-size: 3.5vw;
+    }
+    .main
+    {
+        position: relative;
+        color: black;
+        height: 100%;
+        background-color:white;
+        padding-top:25vh;
+        text-align: left;
+        font-size:3.5vw;
+        line-height: 1.5;
+    }
+}
+
+.social-icons {
+    margin-left: 5%;
+    margin-right: 5%;
+}

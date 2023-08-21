@@ -1,0 +1,121 @@
+.projects
+{
+	position: relative;
+	color: black;
+    /*height: 100vh;*/
+    background-color:white;
+    padding-bottom:15vh;
+	text-align: left;
+    font-size:2vw;
+    line-height: 1.5;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: hidden;
+}
+
+.projects-about{
+    padding-bottom: 10vh;
+}
+
+.project-link {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit text color from parent */
+}
+.project-link:hover .project-id{
+    color: inherit; /* Inherit text color from parent */
+    cursor: pointer; /* Use 'pointer' to mimic a link cursor */
+    transform: scale(1.01)
+  }
+
+.project-id {
+    display: flex;
+    height: 100vh;
+    padding-top:20vh;
+    padding-bottom: 10vh;
+    transition: width 0.5s, height 0.5s; /* Adding a smooth transition effect */
+    overflow-y: hidden; /* Ensure any content that exceeds the div's size is hidden */
+
+    /*align-items: center; /* To vertically center the content */
+  }
+
+.project-id-image {
+    flex: 1; /* This allows the image to take the available space */
+    text-align: left; /* Align the image to the right */
+}
+.project-id-summary {
+    flex: 2.5; /* This allows the text to take the available space */
+    font-size: 1.5vw;
+    margin-left: 10vh;
+}
+.project-id-summary-head{
+    font-size: 1.75vw;
+    font-weight: 550;
+}
+.project-id img {
+    width:100%
+}
+
+@media (max-width: 900px) {
+    .projects
+    {
+        position: relative;
+        color: black;
+        background-color:white;
+        padding-bottom:15vh;
+        text-align: left;
+        font-size:2vw;
+        line-height: 1.5;
+        justify-content: center;
+    }
+    
+    .projects-about{
+        padding-bottom: 5vh;
+        font-size: 4vw;
+    }
+    
+    .project-id {
+        flex-direction: column;
+        padding-top:10vh;
+        padding-bottom: 5vh;
+        align-items: center;
+
+      }
+    
+    .project-id-image {
+        width: 50%;
+        padding-bottom: 5vh;
+    }
+    .project-id-summary {
+        font-size: 3.5vw;
+        line-height: 1.25;
+
+    }
+    
+}
+
+/* Fixed Navigation Dots */
+.dots-container {
+    position: fixed;
+    top: 50%;
+    right: 2vw;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+    cursor: pointer;
+}
+  
+.dot.active {
+    background-color: #000000; /* Replace with the color you want for the active dot */
+}
+
+body {
+    overflow-y: hidden; /* Disable vertical scroll on the whole page */
+}
