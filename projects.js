@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function handleTouchEnd() {
-    const touchDistance = touchEndY - touchStartY;
+    const touchDistance = touchStartY - touchEndY;
     const direction = touchDistance > 0 ? 1 : -1;
     currentComponent += direction;
     if (currentComponent < 0) {
