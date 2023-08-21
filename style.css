@@ -103,11 +103,11 @@ body {
 
 .social-icons a {
     display: inline-block;
-    transition: transform 0.3s, color 0.3s;
+    transition: transform 0.5s, color 0.3s;
 }
 
 .social-icons a i {
-    color: black;
+    color : #444444;
     font-size:2rem;
 }
 
