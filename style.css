@@ -17,16 +17,7 @@ body {
 	max-width: 100%;
     overflow-x: hidden;
 }
-/*
-.navbar {
-    position: fixed;
-    width:100%;
-    background-color: white;
-    padding-left: 0px;
-    padding-right: 0px;
-    z-index:5;
-}   /*old navbar
-*/
+
 
 .navbar {
     position: fixed;
@@ -104,6 +95,27 @@ body {
 .fa-2x{
     padding-right: 4vw;
 }
+
+.social-icons {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.social-icons a {
+    display: inline-block;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a i {
+    color: black;
+    font-size:2rem;
+}
+
+.social-icons a:hover i {
+    color: black;
+    transform: scale(1.1);
+}
+
 @media (max-width: 900px) {
     .navbar-brand{
         font-size: 6vw !important;
@@ -119,26 +131,12 @@ body {
         background-color:white;
         padding-top:25vh;
         text-align: left;
-        font-size:3.5vw;
+        font-size:4vw;
         line-height: 1.5;
+    }
+    .social-icons a i {
+        color: black;
+        font-size:2.5vh;
     }
 }
 
-.social-icons {
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-.social-icons a {
-    display: inline-block;
-    transition: transform 0.3s, color 0.3s;
-}
-
-.social-icons a i {
-    color: black;
-}
-
-.social-icons a:hover i {
-    color: black;
-    transform: scale(1.1);
-}

@@ -89,14 +89,14 @@
     .project-id-summary {
         text-align: left;
         width: 90%;
-        font-size: 3vw;
-        line-height: 1.25;
+        font-size: 2.75vw;
+        line-height: 1.5;
         margin-left:1vw;
         margin-right:1vw;
 
     }
     .project-id-summary-head{
-        font-size: 4vw;
+        font-size: 3.75vw;
         font-weight: 550;
     }
     
