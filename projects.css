@@ -44,7 +44,7 @@
 }
 .project-id-summary {
     flex: 2.5; /* This allows the text to take the available space */
-    font-size: 1.5vw;
+    font-size: 1.25vw;
     margin-left: 10vh;
 }
 .project-id-summary-head{
